@@ -4,7 +4,6 @@
   "description": "Frontend exam - Design to responsive site",
   "author": "Zelmar Galvez",
   "scripts": {
-    "lint": "eslint src",
     "start": "node server.js"
   },
   "devDependencies": {
