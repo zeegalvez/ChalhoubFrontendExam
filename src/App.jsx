@@ -1,9 +1,10 @@
 import React from 'react';
+import Header from './components/Header.jsx';
 
 const App = () => {
     return (
-     <p>test react</p>
-    ); 
+      <Header></Header>
+    ) ; 
 }
 
 export default App;
