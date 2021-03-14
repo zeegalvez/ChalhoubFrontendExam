@@ -4,9 +4,9 @@
   margin: 40px 0;
   color: $black-0;
   span {
-    font-size: 48px;
+    font-size: $heading-1;
     text-transform: uppercase;
-    font-weight: 900;
+    font-weight: $fw-900;
     text-align: center;
     display: block;
   }

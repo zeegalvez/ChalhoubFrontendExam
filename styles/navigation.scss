@@ -10,6 +10,7 @@
             flex-direction: row;
             justify-content: space-between;
             padding: 10px 0;
+            margin: 0;
             li {
                 display: inline-block;
             }
@@ -17,8 +18,8 @@
                 text-decoration: none;
                 color: #5b5a5a;
                 text-transform: uppercase;
-                font-size: 12px;
-                font-weight: 700;
+                font-size: $font-size-small;
+                font-weight: $fw-700;
             }
         }
     }
@@ -33,13 +34,17 @@
         .navigation {
             justify-content: flex-start;
             a {
-                font-size: 14px;
+                font-size: $font-size-medium;
                 padding-right: 16px;
+                &:hover {
+                    text-decoration: underline;
+                }
             }
         }
        }
        .search-field {
-           width: 25%;;
+           width: 25%;
+           padding: 2px 0;
        }
     }
 }

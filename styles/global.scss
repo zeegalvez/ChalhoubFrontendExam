@@ -1,4 +1,15 @@
 @import "reset";
+// Required
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+// Optional
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/type";
+@import "~bootstrap/scss/images";
+@import "~bootstrap/scss/code";
+@import "~bootstrap/scss/grid";
 
 * {
     -webkit-box-sizing: border-box;
@@ -15,8 +26,6 @@ body {
 
 .container {
     max-width: 1040px;
-    padding: 0 15px;
-    margin: 0 auto;
     box-sizing: border-box;
 }
 
@@ -26,27 +35,29 @@ p {
 
 h3 {
   text-transform: uppercase;
-  font-size: 12px;
-  font-weight: 700;
-  margin-bottom: 10px;
+  font-size: $font-size-small;
+  font-weight: $fw-700;
+  margin-bottom: 12px;
   display: block;
+}
+
+img {
+  width: 100%;
+}
+
+ul,ol {
+  margin: 0;
 }
 
   @media only screen and (min-width: $screenMdMin) {
     .container {
-      padding: 0 15px;
+      // padding: 0 15px;
       .main {
         display: flex;
       }
     }
     .flex-container {
       display: flex;
-    }
-    .col-md-7 {
-      width: 60%;
-    }
-    .col-md-5 {
-      width: 40%;
     }
   }
   

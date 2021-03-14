@@ -1,20 +1,25 @@
 
+
+ .product-img {
+  margin-bottom: 20px;
+}
 .product-details {
   margin-bottom: 24px;
   .name {
-    font-size: 16px;
-    font-weight: 700;
+    font-size: $font-size-large;
+    font-weight: $fw-700;
     letter-spacing: 0.5px;
     margin-bottom: 8px;
   }
   .price {
-    font-size: 14px;
+    font-size: $font-size-medium;
     margin-bottom: 24px;
   }
   .sizes {
-    font-size: 14px;
+    font-size: $font-size-medium;
     display: flex;
     margin-bottom: 24px;
+    font-weight: $fw-300;
     ul {
       li {
         display: inline-block;
@@ -27,7 +32,8 @@
     label {
       margin-bottom: 10px;
       display: block;
-      font-size: 14px;
+      font-size: $font-size-medium;
+      font-weight: $fw-300;
     }
     ul li {
       display: inline-block;
@@ -65,13 +71,45 @@
     margin-bottom: 24px;
     label{
       text-transform: uppercase;
-      font-size: 12px;
-      font-weight: 700;
+      font-size: $font-size-small;
+      font-weight: $fw-700;
       margin-bottom: 10px;
       display: block;
     }
     .main {
       margin-bottom: 24px;
+    }
+  }
+  .see-more-products {
+    ul {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    @media only screen and (min-width: $screenMdMin) {
+      ul {
+        justify-content: flex-start;
+      }
+      li {
+        padding-right: 10px;
+        &:last-of-type {
+          padding: 0;
+        }
+      }
+    }
+  }
+  @media only screen and (min-width: $screenMdMin) {
+    .name {
+      font-size: $font-size-x-large;
+    }
+    .price,
+    .sizes {
+      font-size: $font-size-large;
+    }
+    .color-swatches {
+     label {
+      font-size: $font-size-large;
+     }
     }
   }
 }
